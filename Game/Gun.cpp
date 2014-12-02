@@ -3,6 +3,7 @@
 #include <random>
 #include <ctime>
 
+#define GLM_FORCE_RADIANS
 #include <glm/gtx/rotate_vector.hpp>
 
 
@@ -22,8 +23,8 @@ Gun::~Gun() {
     // Empty
 }
 
-void Gun::update(bool isMouseDown, const glm::vec2& position, const glm::vec2& direction, std::vector<Bullet>& bullets) {
-    _frameCounter++;
+void Gun::update(bool isMouseDown, const glm::vec2& position, const glm::vec2& direction, std::vector<Bullet>& bullets, float deltaTime) {
+    _frameCounter += 1.0f * deltaTime;
     // After a certain number of frames has passed we fire our gun
     if (_frameCounter >= _fireRate && isMouseDown) {
         fire(direction, position, bullets);

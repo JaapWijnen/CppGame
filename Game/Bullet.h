@@ -1,5 +1,6 @@
 #pragma once
 
+#define GLM_FORCE_RADIANS
 #include <glm/glm.hpp>
 
 #include <vector>
@@ -19,7 +20,7 @@ public:
     ~Bullet();
 
     // When update returns true, delete bullet
-    bool update(const std::vector<std::string>& levelData);
+    bool update(const std::vector<std::string>& levelData, float deltaTime);
 
     void draw(Bengine::SpriteBatch& spriteBatch);
 

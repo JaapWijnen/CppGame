@@ -34,7 +34,7 @@ Level::Level(const std::string& fileName) {
 
     glm::vec4 uvRect(0.0f, 0.0f, 1.0f, 1.0f);
 
-    Bengine::Color whiteColor;
+    Bengine::ColorRGBA8 whiteColor;
     whiteColor.r = 255;
     whiteColor.g = 255;
     whiteColor.b = 255;
@@ -55,21 +55,21 @@ Level::Level(const std::string& fileName) {
                 case 'R':
                     _spriteBatch.draw(destRect,
                                       uvRect,
-                                      Bengine::ResourceManager::getTexture("../../../Game/Textures/red_bricks.png").id,
+                                      Bengine::ResourceManager::getTexture("Textures/red_bricks.png").id,
                                       0.0f,
                                       whiteColor);      
                     break;
                 case 'G':
                     _spriteBatch.draw(destRect,
                                       uvRect,
-                                      Bengine::ResourceManager::getTexture("../../../Game/Textures/glass.png").id,
+                                      Bengine::ResourceManager::getTexture("Textures/glass.png").id,
                                       0.0f,
                                       whiteColor);
                     break;
                 case 'L':
                     _spriteBatch.draw(destRect,
                                       uvRect,
-                                      Bengine::ResourceManager::getTexture("../../../Game/Textures/light_bricks.png").id,
+                                      Bengine::ResourceManager::getTexture("Textures/light_bricks.png").id,
                                       0.0f,
                                       whiteColor);
                     break;

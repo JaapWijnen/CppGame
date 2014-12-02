@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/Jaap/Documents/Coding/GameTutorials/Bengine/Bengine/ImageLoader.cpp \
-  /Users/Jaap/Documents/Coding/GameTutorials/Bengine/Bengine/ImageLoader.h \
-  /Users/Jaap/Documents/Coding/GameTutorials/Bengine/Bengine/GLTexture.h \
-  /Users/Jaap/Documents/Coding/GameTutorials/Bengine/Bengine/picoPNG.h \
-  /Users/Jaap/Documents/Coding/GameTutorials/Bengine/Bengine/IOManager.h \
-  /Users/Jaap/Documents/Coding/GameTutorials/Bengine/Bengine/Errors.h
+  /Users/Jaap/Documents/Coding/ZombieGame/Bengine/ImageLoader.cpp \
+  /Users/Jaap/Documents/Coding/ZombieGame/Bengine/ImageLoader.h \
+  /Users/Jaap/Documents/Coding/ZombieGame/Bengine/GLTexture.h \
+  /Users/Jaap/Documents/Coding/ZombieGame/Bengine/picoPNG.h \
+  /Users/Jaap/Documents/Coding/ZombieGame/Bengine/IOManager.h \
+  /Users/Jaap/Documents/Coding/ZombieGame/Bengine/Errors.h

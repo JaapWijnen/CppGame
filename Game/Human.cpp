@@ -3,6 +3,7 @@
 #include <ctime>
 #include <random>
 
+#define GLM_FORCE_RADIANS
 #include <glm/gtx/rotate_vector.hpp>
 
 Human::Human() :
@@ -39,12 +40,13 @@ void Human::init(float speed, glm::vec2 pos) {
 
 void Human::update(const std::vector<std::string>& levelData,
                    std::vector<Human*>& humans,
-                   std::vector<Zombie*>& zombies) {
+                   std::vector<Zombie*>& zombies,
+                   float deltaTime) {
 
     static std::mt19937 randomEngine((unsigned int)time(nullptr));
     static std::uniform_real_distribution<float> randRotate(-40.0f * 6.28f / 360.0f, 40.0f * 6.28f / 360.0f);
 
-    _position += _direction * _speed;
+    _position += _direction * _speed * deltaTime;
 
     // Randomly change direction every 20 frames
     if (_frames == 20) {

@@ -20,7 +20,8 @@ public:
 
     void update(const std::vector<std::string>& levelData,
                 std::vector<Human*>& humans,
-                std::vector<Zombie*>& zombies) override;
+                std::vector<Zombie*>& zombies,
+                float deltaTime) override;
 private:
     Bengine::InputManager* _inputManager;
 

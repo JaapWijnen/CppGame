@@ -91,7 +91,7 @@ bool Agent::collideWithAgent(Agent* agent) {
 
 void Agent::draw(Bengine::SpriteBatch& _spriteBatch) {
 
-    static int textureID = Bengine::ResourceManager::getTexture("../../../Game/Textures/circle.png").id;
+    static int textureID = Bengine::ResourceManager::getTexture("Textures/circle.png").id;
 
     const glm::vec4 uvRect(0.0f, 0.0f, 1.0f, 1.0f);
 

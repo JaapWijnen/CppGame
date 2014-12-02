@@ -276,6 +276,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameTutorials-bfibqefbtouaokhfizrpzlfizlhx/Build/Products/Debug",
 				);
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -297,6 +298,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GameTutorials-bfibqefbtouaokhfizrpzlfizlhx/Build/Products/Debug",
 				);
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

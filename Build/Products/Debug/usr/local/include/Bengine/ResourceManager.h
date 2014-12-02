@@ -1,5 +1,7 @@
 #pragma once
+
 #include "TextureCache.h"
+
 #include <string>
 
 namespace Bengine {
@@ -10,7 +12,7 @@ namespace Bengine {
     {
     public:
         static GLTexture getTexture(std::string texturePath);
-    
+
     private:
         static TextureCache _textureCache;
     };

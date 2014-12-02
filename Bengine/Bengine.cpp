@@ -15,10 +15,13 @@ namespace Bengine {
         //Initialize SDL
         SDL_Init(SDL_INIT_EVERYTHING);
         
+        //Apple specific OpenGL setup
+        #ifdef __APPLE__
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
         SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
+        #endif
 
         //Tell SDL that we want a double buffered window so we dont get
         //any flickering

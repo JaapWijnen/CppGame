@@ -15,7 +15,7 @@ namespace Bengine {
         file.seekg(0, std::ios::end);
 
         //Get the file size
-        int fileSize = file.tellg();
+        int fileSize = (int)file.tellg();
         file.seekg(0, std::ios::beg);
 
         //Reduce the file size by any header bytes that might be present

@@ -9,5 +9,5 @@ namespace Bengine {
     public:
         static bool readFileToBuffer(std::string filePath, std::vector<unsigned char>& buffer);
     };
-    
+
 }
